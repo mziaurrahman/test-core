@@ -13,6 +13,7 @@ before_script:
 script:
   - gulp coverage_frontend
   - npm run-script test-server
+  - npm run-script start
   - npm run-script test-client
 
 services: mongodb
