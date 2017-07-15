@@ -1,0 +1,1 @@
+"use strict";;(function(a){"use strict";a.module("hosonto",["ngResource","ngRoute"])})(window.angular);

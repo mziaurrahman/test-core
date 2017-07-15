@@ -1,0 +1,1 @@
+"use strict";;(function(a){"use strict";a.module("hosonto").config(["$locationProvider",function(b){b.html5Mode(!0).hashPrefix("*")}])})(window.angular);

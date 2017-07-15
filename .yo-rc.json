@@ -1,0 +1,18 @@
+{
+  "generator-ng-fullstack": {
+    "appName": "hosonto",
+    "username": "zia",
+    "userEmail": "zia@hosonto.com",
+    "client": "ng1",
+    "server": "node",
+    "secure": false,
+    "testsSeparated": true,
+    "stack": "fullstack",
+    "repoHostUrl": "github.com",
+    "userNameSpace": "zia",
+    "stylePreprocessor": "none",
+    "nodeWebFrameworkServer": "express",
+    "transpilerServer": "node",
+    "differentStaticServer": true
+  }
+}

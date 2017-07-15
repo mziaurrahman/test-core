@@ -1,0 +1,1 @@
+"use strict";;(function(a){"use strict";a.module("hosonto").config(["$routeProvider",function(b){b.when("/",{templateUrl:"todo/templates/todo.html",controller:"TodoController",controllerAs:"todoCtrl"}).otherwise({redirectTo:"/"})}])})(window.angular);

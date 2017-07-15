@@ -1,0 +1,1 @@
+"use strict";;(function(a){"use strict";a.module("hosonto").factory("TodoResource",["$resource",function(b){return b("/api/todos/:id",{},{})}])})(window.angular);
