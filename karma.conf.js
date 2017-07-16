@@ -26,9 +26,9 @@ module.exports = (config) => {
         'client/dev/app.route.js',
         'client/dev/!(bower_components)/**/*.js',
 
-        
+
         'tests/client/**/*_test.js',
-        
+
         'client/dev/**/*.html' // for templateUrl testing
     ],
 
@@ -78,6 +78,13 @@ module.exports = (config) => {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['Chrome', 'Firefox', 'FirefoxNightly', 'ChromeCanary', 'IE', 'Safari', 'PhantomJS'],
+
+    customLaunchers: {
+      Chrome_travis_ci: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
+    },
 
     captureTimeout: 120000,
 
