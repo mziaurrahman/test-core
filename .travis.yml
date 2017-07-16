@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "5.3.0"
+  - "6.9.1"
 
 before_script:
   - npm install -g bower gulp-cli mocha
