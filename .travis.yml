@@ -9,12 +9,12 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
-  - npm run-script start &
-  - sleep 3 # give Web server some time to bind to sockets, etc
 
 script:
   - gulp coverage_frontend
   - npm run-script test-server
+  - npm run-script start &
+  - sleep 3 # give Web server some time to bind to sockets, etc
   - npm run-script test-client
 
 services: mongodb
