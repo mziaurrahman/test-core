@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = (config) => {
-  config.set({
+  var configuration = {
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -77,7 +77,7 @@ module.exports = (config) => {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: [ 'Chrome_travis_ci'],//,'Firefox', 'FirefoxNightly', 'ChromeCanary', 'IE', 'Safari', 'PhantomJS'],
+    browsers: [ 'Chrome','Firefox', 'FirefoxNightly', 'ChromeCanary', 'IE', 'Safari', 'PhantomJS'],
 
     customLaunchers: {
       Chrome_travis_ci: {
@@ -91,15 +91,12 @@ module.exports = (config) => {
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: true
-  });
+  };
 
-  //if(process.env.TRAVIS){
-  //  config.browsers = ['Chrome_travis_ci'];
-    // configuration.reporters = configuration.reporters.concat(['coverage', 'coveralls']);
-    // configuration.coverageReporter = {
-    //   type : 'lcovonly',
-    //   dir : 'coverage/'
-    // };
-  //}
+  if (process.env.TRAVIS) {
+    configuration.browsers = ['Chrome_travis_ci'];
+  }
+
+  config.set(configuration);
 
 };
