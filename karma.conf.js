@@ -77,7 +77,7 @@ module.exports = (config) => {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: [ 'Firefox'],//,'Firefox', 'FirefoxNightly', 'ChromeCanary', 'IE', 'Safari', 'PhantomJS'],
+    browsers: [ 'Chrome_travis_ci'],//,'Firefox', 'FirefoxNightly', 'ChromeCanary', 'IE', 'Safari', 'PhantomJS'],
 
     customLaunchers: {
       Chrome_travis_ci: {
@@ -90,7 +90,7 @@ module.exports = (config) => {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: true
   });
 
   //if(process.env.TRAVIS){
