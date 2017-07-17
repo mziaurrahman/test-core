@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - "6.9.1"
 
+
+env:
+- NODE_ENV="production"
+
 before_script:
   - npm install -g bower gulp-cli mocha
   - bower install
