@@ -18,7 +18,7 @@ before_script:
 #  - npm run-script build-dev
 
 script:
-  - gulp coverage_frontend
+  - gulp coverage-server
   - npm run-script test-server
   - npm run-script dev &
   - sleep 3 # give Web server some time to bind to sockets, etc
